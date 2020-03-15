@@ -38,9 +38,6 @@ log.info("user is " + str(reddit.api.user.me()))
 
 reddit_bot = [
     reddit_bot_action("reply", reddit.random_reply, PROBABILITIES["REPLY"], 0),
-    reddit_bot_action(
-        "submit", reddit.random_submission, PROBABILITIES["SUBMISSION"], 0
-    ),
     reddit_bot_action("delete", reddit.delete_comments, PROBABILITIES["DELETE"], 0),
 ]
 
